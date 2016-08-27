@@ -32,7 +32,7 @@ func init() {
 <{{.ReplyURL}}|質問に回答する>`))
 
 	tplSlackAnswer = template.Must(template.New("slackanswer").Parse(`[Clar No.{{.ID}} に回答しました]
-問題名：<{{.ProblemURL}}|{{.ProblemTitle}}>
+問題名：{{if .ProblemTitle}} <{{.ProblemURL}}|{{.ProblemTitle}}> {{else}} -{{end}}
 ユーザ名：<{{.UserURL}}|{{.UserID}}>
 質問：{{.ClarText}}
 回答：{{.ResponseText}}
