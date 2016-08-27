@@ -3,7 +3,7 @@ AtClar
 
 ## これは何
 - AtCoderでコンテストを開く際に, 質問通知をSlackに送ることができます.  
-- コンテスト管理者用のツールです。
+- これはコンテスト管理者用のツールです. コンテスト参加者は使用できません.
 - [atcoder-clar2slack](https://github.com/icpc-jag/atcoder-clar2slack) を参考にして作られました.
 
 ## インストール & 更新
