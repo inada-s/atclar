@@ -1,0 +1,5 @@
+AtCoderURL = "http://example.com"
+AtCoderUserID = "user_name"
+AtCoderPass = "user_pass"
+SlackWebhookURL = "https://hooks.slack.com/services/XXXXXXXXXXXXXXXXXXXXXXX"
+CheckInterval = "10s"
