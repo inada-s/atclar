@@ -12,11 +12,10 @@ import (
 )
 
 type AtCoderClient struct {
-	URL     string
-	UserID  string
-	Pass    string
-	client  *http.Client
-	isOwner bool
+	URL    string
+	UserID string
+	Pass   string
+	client *http.Client
 }
 
 func newAtCoderClient(url, user, password string) *AtCoderClient {
@@ -24,11 +23,10 @@ func newAtCoderClient(url, user, password string) *AtCoderClient {
 	client := &http.Client{Jar: jar}
 	client.Timeout = 5 * time.Second
 	return &AtCoderClient{
-		URL:     url,
-		UserID:  user,
-		Pass:    password,
-		client:  client,
-		isOwner: false,
+		URL:    url,
+		UserID: user,
+		Pass:   password,
+		client: client,
 	}
 }
 
